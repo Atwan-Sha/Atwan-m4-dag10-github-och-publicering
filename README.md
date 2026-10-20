@@ -46,52 +46,13 @@ På GitHub, i din fork: *Settings → Pages*. Under *Build and deployment*: Sour
 
 Redigera `README.md`: rubrik, en mening om vad sajten är, länk till live-sidan, och vilka tekniker du använt. Commit, push.
 
-### Steg 7. Gör samma sak med mitt-projekt
-
-Publicera ditt eget projekt på samma sätt. Det är den länken du ska visa på redovisningen dag 12.
-
-## AI-spåret (nivå 3: Styr och ansvara)
-
-**AI skriver README, du verifierar** (cirka 25 minuter, efter att du gjort din egen lösning)
-
-Fri användning, full loggning. Du bär ansvaret för allt du lämnar in. AI hittar gärna på funktioner som inte finns. En README som ljuger är värre än ingen README.
-
-Regler: egen lösning först, du ska kunna förklara varje rad, och du loggar i `docs/ai-logg.md` i `mitt-projekt`. Reglerna finns i `AI-REGLER.md` i `mitt-projekt`.
-
-1. Be AI skriva en README med prompten nedan.
-2. Gå igenom varje påstående: finns det i koden?
-3. Ta bort eller rätta det som är påhittat.
-4. Kontrollera alla länkar och att live-länken fungerar.
-5. Logga hur många påstånden som var fel.
-
-Prompt att utgå från:
-
-```
-Skriv en README.md för detta repo.
-Beskriv bara sådant som finns i filerna.
-Markera med [KONTROLLERA] allt du är
-osäker på.
-
-[klistra in filstruktur och nyckelfiler]
-```
-
-**Kontrollera med:**
-
-- Öppna varje länk.
-- Jämför varje funktion som nämns mot koden.
-- Läs hela texten högt. Låter det som dig?
-
-**I ditt projekt:** Skriv READMEn för ditt projekt med AI och verifiera varje påstående.
-
 ## Kontrollista: så vet du att du är klar
 
 - [ ] `git push` har skickat upp alla dina commits.
 - [ ] Din fork har GitHub Pages påslaget, och live-länken fungerar.
 - [ ] Bilder och CSS laddas på den publicerade sidan.
 - [ ] README.md beskriver projektet och innehåller live-länken.
-- [ ] Du har publicerat även `mitt-projekt`.
-- [ ] Du har skickat in alla tre länkarna (repo, live-sida, mitt-projekt-live).
-- [ ] Du har gjort AI-uppgiften och skrivit en post i `docs/ai-logg.md`.
+- [ ] Du har skickat in länken till din fork och din live-länk.
 
 ## Tips om du fastnar
 
@@ -100,10 +61,6 @@ osäker på.
 - Repot måste vara publikt för att Pages ska fungera på ett gratiskonto.
 - Push avvisas? Kör `git pull` först och försök igen.
 
-## Ditt projekt: Dagens steg i `mitt-projekt`
-
-Efter övningen här jobbar du vidare i ditt eget projekt (din design från modul 3). Dagens steg står i `PROJEKTSTEG.md` i ditt repo `mitt-projekt`, under **Dag 10**. Det är där ditt riktiga arbete växer. Övningen här är träningsbanan.
-
 ## Inlämning
 
 **Deadline: imorgon klockan 09.00.** Allt lämnas in i Microsoft Forms. Du behöver inte redovisa något muntligt.
@@ -111,8 +68,7 @@ Efter övningen här jobbar du vidare i ditt eget projekt (din design från modu
 I formuläret fyller du i:
 
 1. Länk till din fork av det här repot.
-2. Länk till ditt `mitt-projekt`.
-3. Reflektion: Klistra in live-länken. Vad var det första du tänkte när du öppnade din publicerade sida?
+2. Reflektion: Klistra in live-länken. Vad var det första du tänkte när du öppnade din publicerade sida?
 
 ## Vill du mer? (frivilligt)
 
