@@ -58,13 +58,18 @@ textarea {
 }
 input[type='text'],
 input[type='email'],
+input[type='tel'],
+input[type='date'],
+select,
+fieldset,
 textarea {
 	width: 100%;
 	max-width: 28rem;
 }
-label,
+.field label,
 legend {
 	font-weight: bold;
+  display: block;
 }
 form .btn {
 	margin-top: var(--sp-2);
