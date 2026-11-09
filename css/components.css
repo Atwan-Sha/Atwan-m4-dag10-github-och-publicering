@@ -1,113 +1,71 @@
-/* Komponenter: återanvändbara delar (nav-länkar, kort, knapp, hero, formulär) */
-nav a {
-  color: #ffffff;
-  font-weight: 600;
-}
-
-footer a {
-  color: #ffffff;
-}
-
-.knapp {
-  display: inline-block;
-  background-color: var(--color-primary);
-  color: #ffffff;
-  padding: 12px 20px;
-  border: 0;
-  border-radius: var(--radius-sm);
-  text-decoration: none;
-  font: inherit;
-  cursor: pointer;
-}
-
-.knapp:hover {
-  background-color: var(--color-primary-dark);
-  color: #ffffff;
-}
-
-/* Kort */
+/** Component Styles: buttons, cards, images, forms */
 article {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  padding: var(--space-2);
+	background-color: var(--color-card-bg);
+	border: 1px solid var(--color-card-border);
+	border-radius: 8px;
+	padding: var(--sp-2);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--sp-1);
+}
+article .price {
+	color: var(--color-accent);
+	font-weight: bold;
+	margin-top: auto;
+}
+article:hover {
+	transform: scale(1.02) rotate(1deg);
+	transition: transform 0.2s ease-in-out;
 }
 
-article img,
-#om-oss img {
-  border-radius: 4px;
+img {
+	max-width: 100%;
+	/* height: auto; */
+	border-radius: 4px;
+}
+article img {
+	max-height: 240px;
+	width: auto;
 }
 
-.pris {
-  margin-top: auto;
-  font-weight: 700;
-  color: var(--color-primary);
+.btn {
+	background-color: var(--color-accent);
+	color: var(--color-text-light);
+	font-family: var(--font-family-hero);
+	font-size: var(--font-size-hero);
+	padding: 12px 20px;
+	border: none;
+	border-radius: 6px;
+	text-decoration: none;
+	display: inline-block;
+}
+.btn:hover {
+	background-color: var(--color-accent-hover);
+	cursor: pointer;
 }
 
-/* Hero */
-#hero {
-  background-color: var(--color-tint);
-  padding: var(--space-4) var(--space-3);
-  border-radius: var(--radius);
-}
-
-#hero p {
-  font-size: var(--fs-lead);
-  max-width: 60ch;
-}
-
-@media (min-width: 600px) {
-  #hero {
-    padding: 56px 40px;
-  }
-
-  #hero h2 {
-    font-size: var(--fs-hero);
-  }
-}
-
-/* Formulär */
-.falt,
-.val {
-  margin-bottom: var(--space-2);
-}
-
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.val label {
-  display: inline;
-  font-weight: 400;
-  margin-left: var(--space-1);
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
+input,
 select,
+fieldset,
 textarea {
-  width: 100%;
-  max-width: 28rem;
-  padding: 10px 12px;
-  border: 2px solid var(--color-input-border);
-  border-radius: var(--radius-sm);
-  font: inherit;
+	font: inherit;
+	padding: 4px var(--sp-1);
+	margin: var(--sp-1) 0;
+	border-radius: 4px;
+	border: 2px solid var(--color-input-border);
 }
-
-fieldset {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  margin: 0 0 var(--space-2);
-  padding: 12px var(--space-2);
+input[type='text'],
+input[type='email'],
+textarea {
+	width: 100%;
+	max-width: 28rem;
 }
-
+label,
 legend {
-  font-weight: 700;
-  padding: 0 var(--space-1);
+	font-weight: bold;
+}
+form .btn {
+	margin-top: var(--sp-2);
 }
